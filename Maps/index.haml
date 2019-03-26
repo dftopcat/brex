@@ -1,0 +1,5 @@
+- $numSlices = 13
+- $numSlices.times do |j|
+	%ul.cube
+		- 4.times do |i|
+			%li.face{:class => "f#{(j+1)}"}

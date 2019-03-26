@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 3D image animation</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <style>
+      @charset "UTF-8";
+
+@keyframes twist {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+body {
+  perspective: 50em;
+  background-color: #333;
+}
+
+.cube {
+  position: relative;
+  top: 50px;
+  margin: 0 auto 0;
+  padding: 0;
+  width: 320px;
+  height: 47px;
+  list-style: none;
+  transform-style: preserve-3d;
+  animation-duration: 3s;
+  animation-name: twist;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 4;
+  animation-direction: alternate;
+}
+
+.face {
+  box-sizing: border-box;
+  position: absolute;
+  width: 320px;
+  height: 47px;
+  background: url("gmap2h.jpg") -15px -30px;
+  backface-visibility: hidden;
+}
+
+.face:nth-child(1) {
+  transform: translateZ(10em);
+}
+
+.face:nth-child(2) {
+  transform: rotateY(180deg) translateZ(10em);
+}
+
+.face:nth-child(3) {
+  transform: rotateY(90deg) translateZ(10em);
+}
+
+.face:nth-child(4) {
+  transform: rotateY(-90deg) translateZ(10em);
+}
+
+.cube:nth-child(1) {
+  animation-delay: 100ms;
+}
+
+.f1 {
+  background-position: -15px -77px;
+}
+
+.cube:nth-child(2) {
+  animation-delay: 200ms;
+}
+
+.f2 {
+  background-position: -15px -124px;
+}
+
+.cube:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+.f3 {
+  background-position: -15px -171px;
+}
+
+.cube:nth-child(4) {
+  animation-delay: 400ms;
+}
+
+.f4 {
+  background-position: -15px -218px;
+}
+
+.cube:nth-child(5) {
+  animation-delay: 500ms;
+}
+
+.f5 {
+  background-position: -15px -265px;
+}
+
+.cube:nth-child(6) {
+  animation-delay: 600ms;
+}
+
+.f6 {
+  background-position: -15px -312px;
+}
+
+.cube:nth-child(7) {
+  animation-delay: 700ms;
+}
+
+.f7 {
+  background-position: -15px -359px;
+}
+
+.cube:nth-child(8) {
+  animation-delay: 800ms;
+}
+
+.f8 {
+  background-position: -15px -406px;
+}
+
+.cube:nth-child(9) {
+  animation-delay: 900ms;
+}
+
+.f9 {
+  background-position: -15px -453px;
+}
+
+.cube:nth-child(10) {
+  animation-delay: 1000ms;
+}
+
+.f10 {
+  background-position: -15px -500px;
+}
+
+.cube:nth-child(11) {
+  animation-delay: 1100ms;
+}
+
+.f11 {
+  background-position: -15px -547px;
+}
+
+.cube:nth-child(12) {
+  animation-delay: 1200ms;
+}
+
+.f12 {
+  background-position: -15px -594px;
+}
+
+.cube:nth-child(13) {
+  animation-delay: 1300ms;
+}
+
+.f13 {
+  background-position: -15px -641px;
+}
+
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div class="w3-container">
+        <div class="w3-bar w3-light-grey">
+                      <a href="/brex29Mar19" class="w3-bar-item w3-button">Original Date</a>
+                      <a href="/" class="w3-bar-item w3-button">Home</a>
+                      <a href="/Directives" class="w3-bar-item w3-button">EU Directives</a>
+                      <a href="#" class="w3-bar-item w3-button">2016 Brexit Vote Map</a>
+                    </div>
+
+<br>
+
+
+  <ul class='cube'>
+  <li class='f1 face'></li>
+  <li class='f1 face'></li>
+  <li class='f1 face'></li>
+  <li class='f1 face'></li>
+</ul>
+<ul class='cube'>
+  <li class='f2 face'></li>
+  <li class='f2 face'></li>
+  <li class='f2 face'></li>
+  <li class='f2 face'></li>
+</ul>
+<ul class='cube'>
+  <li class='f3 face'></li>
+  <li class='f3 face'></li>
+  <li class='f3 face'></li>
+  <li class='f3 face'></li>
+</ul>
+<ul class='cube'>
+  <li class='f4 face'></li>
+  <li class='f4 face'></li>
+  <li class='f4 face'></li>
+  <li class='f4 face'></li>
+</ul>
+<ul class='cube'>
+  <li class='f5 face'></li>
+  <li class='f5 face'></li>
+  <li class='f5 face'></li>
+  <li class='f5 face'></li>
+</ul>
+<ul class='cube'>
+  <li class='f6 face'></li>
+  <li class='f6 face'></li>
+  <li class='f6 face'></li>
+  <li class='f6 face'></li>
+</ul>
+<ul class='cube'>
+  <li class='f7 face'></li>
+  <li class='f7 face'></li>
+  <li class='f7 face'></li>
+  <li class='f7 face'></li>
+</ul>
+<ul class='cube'>
+  <li class='f8 face'></li>
+  <li class='f8 face'></li>
+  <li class='f8 face'></li>
+  <li class='f8 face'></li>
+</ul>
+<ul class='cube'>
+  <li class='f9 face'></li>
+  <li class='f9 face'></li>
+  <li class='f9 face'></li>
+  <li class='f9 face'></li>
+</ul>
+<ul class='cube'>
+  <li class='f10 face'></li>
+  <li class='f10 face'></li>
+  <li class='f10 face'></li>
+  <li class='f10 face'></li>
+</ul>
+<ul class='cube'>
+  <li class='f11 face'></li>
+  <li class='f11 face'></li>
+  <li class='f11 face'></li>
+  <li class='f11 face'></li>
+</ul>
+<ul class='cube'>
+  <li class='f12 face'></li>
+  <li class='f12 face'></li>
+  <li class='f12 face'></li>
+  <li class='f12 face'></li>
+</ul>
+<ul class='cube'>
+  <li class='f13 face'></li>
+  <li class='f13 face'></li>
+  <li class='f13 face'></li>
+  <li class='f13 face'></li>
+</ul>
+  
+  
+
+</body>
+
+</html>
